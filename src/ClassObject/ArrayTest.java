@@ -15,6 +15,8 @@ public class ArrayTest {
         School school1 = new School();
         schoolArr[0] = school1;
 
+        System.out.println(school1);
+
         System.out.println(arr); //output starts with a class name
         System.out.println(Arrays.toString(arr)); //values
         System.out.println(arr.getClass().getName()); //to find class name
