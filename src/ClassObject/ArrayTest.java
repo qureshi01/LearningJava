@@ -8,6 +8,11 @@ public class ArrayTest {
         arr[0] = 5;
         arr[1] = 10;
         arr[2] = 15;
+        fun(arr);
+        fun1(new int[]{20,40,60}); //anonymous arrays
+
+        
+
         System.out.println(arr); //output starts with a class name
         System.out.println(Arrays.toString(arr)); //values
         System.out.println(arr.getClass().getName()); //to find class name
@@ -22,6 +27,24 @@ public class ArrayTest {
         System.out.println(arr1.getClass().getName()); //to find class name
         System.out.println("length of arr1 : " + arr1.length);
     }
+
+    public static void fun(int[] arr){
+        System.out.println("Inside Fun Function");
+        for(int i=0;i<arr.length;i++){
+            System.out.println(arr[i]);
+        }
+    }
+
+    public static void fun1(int[] arr){
+        System.out.println("Inside Fun1 Function");
+        for(int i=0;i<arr.length;i++){
+            System.out.println(arr[i]);
+        }
+
+
+    }
+
+
 
 
 }
