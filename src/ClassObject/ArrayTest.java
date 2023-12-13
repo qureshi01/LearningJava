@@ -11,7 +11,9 @@ public class ArrayTest {
         fun(arr);
         fun1(new int[]{20,40,60}); //anonymous arrays
 
-        
+        School[] schoolArr = new School[10];
+        School school1 = new School();
+        schoolArr[0] = school1;
 
         System.out.println(arr); //output starts with a class name
         System.out.println(Arrays.toString(arr)); //values
