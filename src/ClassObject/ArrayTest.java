@@ -14,8 +14,10 @@ public class ArrayTest {
         School[] schoolArr = new School[10];
         School school1 = new School();
         schoolArr[0] = school1;
+        school1.name="SRM";
+        school1.affliation="SRM University";
 
-        System.out.println(school1);
+        System.out.println(Arrays.toString(schoolArr));
 
         System.out.println(arr); //output starts with a class name
         System.out.println(Arrays.toString(arr)); //values
