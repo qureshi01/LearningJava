@@ -23,6 +23,29 @@ public class Variables {
         System.out.println(s2); //to string method is being overriden and customised in student class.
         System.out.println(s3);
 
+        fun(); //Calling anything static use the class reference
+
+        Variables variables = new Variables();
+        variables.fun1();  //when calling on non-static create an object and use object name as the reference
+
+
+    }
+
+    public static void fun(){
+        Student.study();
+        Student student1 = new Student();
+        student1.play();
+
+        System.out.println("Inside Fun");
+
+    }
+
+    public void fun1(){
+        Student.study(); //Calling anything static use the class reference
+        Student student1 = new Student();
+        student1.play();  //when calling on non-static create an object and use object name as the reference
+
+        System.out.println("Inside Fun1");
 
     }
 }

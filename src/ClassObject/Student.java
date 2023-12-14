@@ -8,7 +8,7 @@ public class Student {
     public void play(){
         System.out.println("Student love to play");
     }
-    public void study(){
+    public static void study(){
         System.out.println("Students love to study");
     }
 
