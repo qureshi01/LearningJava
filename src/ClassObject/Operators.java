@@ -24,7 +24,7 @@ public class Operators {
         System.out.println("--------");
         Student s1 = new Student();
         Student s2 = new Student();
-        Student s3 = s2;
+        Student s3 = s2; // here s3 object is storing in s2 in same address
 
         System.out.println(s1==s2);
         System.out.println(s2==s3);
