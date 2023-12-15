@@ -20,7 +20,26 @@ public class Operators {
 
         //System.out.println("Hashim">"Hashim12"); relational operator cannot be applied in string or any objects
 
-        
+        //equality operator
+        System.out.println("--------");
+        Student s1 = new Student();
+        Student s2 = new Student();
+        Student s3 = s2;
+
+        System.out.println(s1==s2);
+        System.out.println(s2==s3);
+
+        System.out.println("--------");
+
+
+        String s4 = new String("Hashim");
+        String s5 = new String("Hashim");
+
+        System.out.println(s4==s5); //refers to address
+        System.out.println(s4.equals(s5)); //refers to value in object
+
+
+
 
     }
 }
