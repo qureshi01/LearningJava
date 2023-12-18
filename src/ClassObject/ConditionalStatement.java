@@ -108,7 +108,7 @@ public class ConditionalStatement {
         //Vowel Finder
         System.out.println("VOWEL FINDER");
         System.out.println("----------");
-        
+
         char z='a';
         switch(z) {
             case 'a':
