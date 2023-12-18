@@ -1,9 +1,12 @@
 package ClassObject;
+import java.util.Scanner;
 
 public class ConditionalStatement {
     public static void main(String[] args) {
 
         //if else statement
+        System.out.println("IF ELSE");
+        System.out.println("----------");
         int x = 0;
         int y = 10;
         if (x < y) {
@@ -17,8 +20,10 @@ public class ConditionalStatement {
         //if else part is not there brackets are too optional if the code is single line.
 
         //nested if
+        System.out.println("NESTED IF");
+        System.out.println("----------");
 
-        if (x == 1) {
+        if (x == 1) { //here x=0 cannot be checked because its assigning. so we should provide x==0
             System.out.println("True");
         } else if (x == 0) {
             System.out.println("True Again1");
@@ -27,6 +32,8 @@ public class ConditionalStatement {
         }
 
         //Switch Statement
+        System.out.println("SWITCH WITHOUT BREAK");
+        System.out.println("----------");
 
         switch(y){
             case 1:
@@ -37,9 +44,11 @@ public class ConditionalStatement {
                 System.out.println("Default Value");
         }
 
-        System.out.println("------------");
 
-        //usge of break is shown as break requires to stop the loop or else the next code will be executed
+
+        //usage of break is shown as break requires to stop the loop or else the next code will be executed
+        System.out.println("SWITCH WITH BREAK");
+        System.out.println("----------");
 
         switch(y){
             case 1:
@@ -53,15 +62,30 @@ public class ConditionalStatement {
         }
 
         //for loop
-        System.out.println("---------");
+
+        System.out.println("FOR LOOP");
+        System.out.println("----------");
 
         int[] arr= new int[]{5,3,4,5};
         for(int i=0;i<arr.length;i++){
             System.out.println(arr[i]);
         }
+
         //for each loop
+        System.out.println("FOR-EACH LOOP");
+        System.out.println("----------");
+
+        for(int i:arr){
+            System.out.println("Looping "+i);
+        }
+
+
         //while loop
-        System.out.println("--------");
+
+        System.out.println("WHILE LOOP");
+        System.out.println("----------");
+
+
         int i=0;
         while(i<arr.length){
             System.out.println(arr[i]+" Welcome");
@@ -69,6 +93,9 @@ public class ConditionalStatement {
         }
 
         //do-while
+        System.out.println("DO-WHILE LOOP");
+        System.out.println("----------");
+
 
         int j =0;
         do{
@@ -77,6 +104,33 @@ public class ConditionalStatement {
             j++;
         }while(j<arr.length);
 
-    } //edit
+
+        //Vowel Finder
+        System.out.println("VOWEL FINDER");
+        System.out.println("----------");
+        
+        char z='a';
+        switch(z) {
+            case 'a':
+            case 'e':
+            case 'i':
+            case 'o':
+            case 'u':
+                System.out.println("This Is A Vowel");
+                break;
+            case 'A':
+            case 'E':
+            case 'I':
+            case 'O':
+            case 'U':
+                System.out.println("This Is A Vowel");
+                break;
+            default:
+                System.out.println("This is a consonant");
+
+
+        }
+
+    }
 
 }
