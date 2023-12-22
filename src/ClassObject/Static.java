@@ -3,6 +3,8 @@ package ClassObject;
 public class Static {
     static int x = 20;
     int y = 30;
+    final  int z=20;
+    Address address;
 
     public static void main(String[] args) {
         Static s1 = new Static();
@@ -19,6 +21,15 @@ public class Static {
         System.out.println(x+s1.y);
         System.out.println(x+s2.y);
 
+       // s1.z=30;
+        // here the value cannot be change because the final keyword used
+
+    }
+
+    //Static classes can be used in nested classes
+    //Top class should be always non-static
+    static class Address {
+        //if address have different components it can be created to a class
     }
 
 
